@@ -1,0 +1,90 @@
+{
+    "team": [
+      {
+          "id": 1,
+          "nama": "TEAM RRQ",
+          "divisi":"Mobile Legend, PUBG, Free Fire, Valorant",
+          "bio":"Rex Regum Qeon atau lebih dikenal dengan team RRQ adalah salah satu klub e-sports profesional terbesar dari Indonesia. Team RRQ sendiri sudah mempunyai berbagai gelar prestasi di dunia e-sports baik di Tanah Air hingga Mancanegara.Nama Rex Regum berasal dari bahasa Latin yang berarti ‘raja dari segala raja’ atau ‘king of kings’, sedangkan Qeon merupakan nama in game Presiden Direktur Team RRQ, Riki K. Suliawan.",
+          "gambar":"assets/team/rrq.png"
+      },
+      {
+          "id": 2,
+          "nama": "EVOS ESPORT",
+          "divisi":"Mobile Legend, PUBG, Free Fire",
+          "bio":"EVOS Esports sebelumnya dikenal sebagai Zero Latitude, adalah organisasi esport profesional yang berbasis di Jakarta, Indonesia yang didirikan oleh Alberto Akbar dan dipegang kendali oleh Bisma Aditya Putra sebagai Chief Executive Officer (CEO) di Indonesia.",
+          "gambar":"assets/team/evos.png"
+      },
+      {
+          "id": 3,
+          "nama": "ONIC ESPORT",
+          "divisi":"Mobile Legend, PUBG, Valorant",
+          "bio":"ONIC Esports adalah tim profesional Esports yang berasal dari Indonesia dan dibentuk pada tanggal 26 Juli 2018.",
+          "gambar":"assets/team/onic.png"
+      },
+      {
+          "id": 4,
+          "nama": "AURA FIRE",
+          "divisi":"Mobile Legend, PUBG, Free Fire",
+          "bio":"Aura Fire mengikuti MPL pada season 3. Lalu pada MPL Season 4 Aura mendatangkan mantan pemain profesional LOL & AoV yaitu Phoenix. Sempat menjadi kuda hitam namun Aura belum membawa hasil memuaskan. Di MPL Season 5 Aura mendatangkan Susugajah. Di awal season Aura memperlihatkan permainan yang baik. Lalu Susugajah ditukar oleh Vaanstrong yang awalnya membela tim MDL. Tetapi Aura kembali belum bisa meraih hasil maksimal pada MPL Season 5.",
+          "gambar":"assets/team/aura.png"
+      },
+      {
+          "id": 5,
+          "nama": "BTR ALPHA",
+          "divisi":"Mobile Legend, PUBG, Free Fire",
+          "bio":"Bigetron Esports adalah organisasi esport profesional yang berbasis di Jakarta, Indonesia yang dipegang kendali oleh Edwin Starlest Chia sebagai Chief Executive Officer (CEO) di Indonesia.Awal mula terbentuknya Bigetron adalah ketika CEO Bigetron,memutuskan membentuk Bigetron atas dasar hobinya bermain gim online. Pada waktu itu, Bigetron hanya memiliki satu divisi, yaitu divisi League of Legends.",
+          "gambar":"assets/team/btr.png"
+      },
+      {
+          "id": 6,
+          "nama": "ALTER EGO",
+          "divisi":"Mobile Legend, PUBG, Free Fire, Valorant",
+          "bio":"Alter Ego memulai perjalanannya di MPL Season 2 namun belum mencapai hasil yang memuaskan. Lalu Alter Ego kemudian mulai menjadi tim kuda hitam karena berhasil naik perlahan-lahan. Di MPL Season 3 Alter Ego berhasil finish di posisi 5 dan season selanjutnya di posisi 3. ",
+          "gambar":"assets/team/alter.png"
+      },
+      {
+          "id": 7,
+          "nama": "BOOM ESPORT",
+          "divisi":"PUBG, Free Fire, Valorant, Dota 2",
+          "bio":"Didirikan pada November 2016, BOOM Esports adalah organisasi esports multinasional multidivisi dengan daftar pemain papan atas dari kawasan Asia Tenggara. Kami lahir dari keyakinan kami bahwa juara tidak dilahirkan, mereka dibuat. Mereka dibuat dari mereka yang berkembang untuk tidak kekurangan kebesaran: mereka yang berkembang menjadi binatang.Dengan “Beast on our Mind” (BOOM), selalu menjadi misi kami untuk menemukan dan mendukung talenta paling menjanjikan di dunia dengan manajemen profesional dan mencapai level tertinggi dari permainan kompetitif",
+          "gambar":"assets/team/boom.png"
+      }
+    ],
+    "game":[
+        {
+            "id": 1,
+            "nama": "Mobile Legend",
+            "turnament":"MPL, M-Series, MSC, Piala Presiden",
+            "bio":"Mobile Legends: Bang Bang adalah sebuah permainan MOBA yang dirancang untuk ponsel. Kedua tim lawan berjuang untuk mencapai dan menghancurkan basis musuh sambil mempertahankan basis mereka sendiri untuk mengendalikan jalan setapak, tiga jalur yang dikenal sebagai top, middle dan bottom, yang menghubungkan basis-basis.Di masing-masing tim, ada lima pemain yang masing-masing mengendalikan avatar, yang dikenal sebagai hero, dari perangkat mereka sendiri. Karakter terkontrol komputer yang lebih lemah, yang disebut minions, bertelur di basis tim dan mengikuti tiga jalur ke basis tim lawan, melawan musuh dan menara.",
+            "gambar":"assets/game/ml.png"
+        },
+        {
+            "id": 2,
+            "nama":"PUBG",
+            "turnament":"PMPL, PMPL SEA, PMGC",
+            "bio":"PlayerUnknown's Battlegrounds (sering disingkat PUBG) adalah sebuah permainan video dengan genre battle royale, di mana 100 orang sekaligus dapat bermain secara daring. Pemenang dari permainan ini adalah individu atau tim yang dapat bertahan hingga akhir. Pemain bisa bermain sendirian (solo), tim dengan dua orang (duo), dan tim dengan empat orang (squad). Pemain bisa mengundang teman di daftar teman (friend list) untuk bergabung ke dalam permainan sebagai sebuah tim.",
+            "gambar":"assets/game/pubg.png"
+        },
+        {
+            "id": 3,
+            "nama":"Free Fire",
+            "turnament":"FFML, FFIM, FFWS",
+            "bio":"Garena Free Fire atau biasa disebut Free Fire (sering disingkat FF) adalah permainan battle royale yang dikembangkan oleh 111 Dots Studio dan diterbitkan oleh Garena untuk Android dan iOS.Itu menjadi permainan seluler yang paling banyak diunduh secara global pada tahun 2019. Karena popularitasnya, permainan ini menerima penghargaan untuk Best Popular Vote Game oleh Google Play Store pada tahun 2019",
+            "gambar":"assets/game/ff.png"
+        },
+        {
+            "id": 4,
+            "nama":"Valorant",
+            "turnament":"Valorant Challengers, Valorant Masters, Valorant Champions",
+            "bio":"Valorant (bergaya sebagai VALORANT) adalah penembak pahlawan orang pertama taktis multipemain gratis untuk dimainkan yang dikembangkan dan diterbitkan oleh Riot Games, untuk Microsoft Windows. Pertama kali menggoda dengan nama kode Project A pada Oktober 2019, permaian memulai periode beta tertutup dengan akses terbatas pada 7 April 2020, diikuti dengan perilisan resmi pada 2 Juni 2020. Pengembangan permainan dimulai pada 2014.",
+            "gambar":"assets/game/valo.png"
+        },
+        {
+            "id": 5,
+            "nama":" Dota 2",
+            "turnament":"The International (TI)",
+            "bio":"Dota 2 adalah sebuah permainan arena pertarungan daring multipemain, dan merupakan sekuel dari Defense of the Ancients mod pada Warcraft 3: Reign of Chaos dan Warcraft 3: The Frozen Throne. DotA 2 dikembangkan oleh Valve Corporation, terbit juli 2013 dota 2 dapat dimainkan secara gratis. Dota 2 dimainkan oleh 2 tim yang beranggota 5 orang pemain, setiap tim memiliki markas yang berada dipojok peta, setiap markas memiliki satu bangunan bernama Ancient, Di mana tim harus berusaha menghancurkan Ancient tim lawan agar dapat memenangkan pertandingan. Setiap pemain hanya dapat mengontrol satu karakter Hero yang berfokus pada menaikan level, mengumpulkan gold, membeli item dan melawan tim lawan untuk menang.",
+            "gambar":"assets/game/dota.png"
+        }
+    ]
+}
