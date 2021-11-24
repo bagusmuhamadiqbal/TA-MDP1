@@ -1,0 +1,20 @@
+{
+  "name": "ta-mdp1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bagusmuhamadiqbal/TA-MDP1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bagusmuhamadiqbal/TA-MDP1/issues"
+  },
+  "homepage": "https://github.com/bagusmuhamadiqbal/TA-MDP1#readme"
+}
