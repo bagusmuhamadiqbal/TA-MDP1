@@ -20,7 +20,7 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.cyan[800],
+      backgroundColor: Colors.brown,
       body: Center(
           child: ListView.builder(
               shrinkWrap: true,
@@ -62,28 +62,28 @@ class _ProfilePageState extends State<ProfilePage> {
                     const SizedBox(
                       height: 20.0,
                       width: 200,
-                      child: Divider(color: Colors.black),
+                      child: Divider(color: Colors.white70),
                     ),
                     Card(
-                      color: Colors.blueGrey[400],
+                      color: Colors.brown[300],
                       margin: const EdgeInsets.symmetric(
                           vertical: 10.0, horizontal: 75.0),
                       child: ListTile(
-                        leading: Icon(
+                        leading: const Icon(
                           Icons.badge,
-                          color: Colors.blueGrey[100],
+                          color: Colors.white70,
                         ),
                         title: Text(nim[index]),
                       ),
                     ),
                     Card(
-                        color: Colors.blueGrey[400],
+                        color: Colors.brown[300],
                         margin: const EdgeInsets.symmetric(
                             vertical: 10.0, horizontal: 75.0),
                         child: ListTile(
-                          leading: Icon(
+                          leading: const Icon(
                             Icons.email,
-                            color: Colors.blueGrey[100],
+                            color: Colors.white70,
                           ),
                           title: Text(email[index]),
                         )),
@@ -93,3 +93,4 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 }
+
