@@ -28,83 +28,57 @@ class _TeamPageState extends State<TeamPage> {
   late Future<Team> futureTeam;
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: FutureBuilder<List<Team>>(
-          future: fetchTeam(),
-          builder: (context, snapshot) {
-            if (snapshot.hasError) {
-              return const Center(
-                child: Text('An error has occurred!'),
-              );
-            } else if (snapshot.hasData) {
-              return TeamList(team: snapshot.data!);
-            } else {
-              return const Center(
-                child: CircularProgressIndicator(),
-              );
-            }
-          }),
-    );
+  void initState() {
+    super.initState();
   }
-}
-
-class TeamList extends StatelessWidget {
-  const TeamList({Key? key, required this.team}) : super(key: key);
-
-  final List<Team> team;
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
-      padding: const EdgeInsets.all(20),
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 3,
-        crossAxisSpacing: 5.0,
-        mainAxisSpacing: 5.0,
+    return Scaffold(
+      backgroundColor: Colors.brown,
+      body: Center(
+        child: FutureBuilder(
+          builder: (context, AsyncSnapshot<List<Team>> snapshot) {
+            if (snapshot.hasData) {
+              return Center(
+                child: ListView.builder(
+                  itemCount: snapshot.data!.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return Card(
+                      color: Colors.brown[300],
+                      child: ListTile(
+                        contentPadding: const EdgeInsets.symmetric(
+                            horizontal: 20.0, vertical: 10.0),
+                        leading: CircleAvatar(
+                          radius: 30,
+                          backgroundImage:
+                              NetworkImage(snapshot.data![index].gambar),
+                          backgroundColor: Colors.brown[100],
+                        ),
+                        title: Text(snapshot.data![index].nama),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => DetailTeam(
+                                id: snapshot.data![index].id,
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                    );
+                  },
+                ),
+              );
+            } else if (snapshot.hasError) {
+              return const Center(child: Text('Something went wrong :('));
+            }
+            return const CircularProgressIndicator();
+          },
+          future: fetchTeam(),
+        ),
       ),
-      itemCount: team.length,
-      itemBuilder: (context, index) {
-        return Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            color: Colors.grey,
-          ),
-          child: InkWell(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => DetailTeam(
-                            id: team[index].id,
-                          )));
-            },
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Image.network(
-                  team[index].gambar,
-                  scale: 2.5,
-                ),
-                const Padding(
-                  padding: EdgeInsets.all(10),
-                ),
-                FittedBox(
-                  fit: BoxFit.fill,
-                  child: Text(
-                    team[index].nama,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                    ),
-                  ),
-                )
-              ],
-            ),
-          ),
-        );
-      },
     );
   }
 }
