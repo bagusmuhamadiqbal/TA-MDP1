@@ -43,14 +43,16 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.brown,
       appBar: AppBar(
         title: const Text('EASPORT INDONESIA'),
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.brown[900],
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.brown[800],
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.animation),
@@ -66,9 +68,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
+        selectedItemColor: Colors.black,
         onTap: _onItemTapped,
       ),
     );
   }
 }
+
