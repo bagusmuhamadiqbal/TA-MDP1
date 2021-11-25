@@ -26,9 +26,8 @@ class _DetailGameState extends State<DetailGame> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text('Detail Game'),
-          backgroundColor: Colors.lightBlue[900]),
-      backgroundColor: Colors.grey[400],
+          title: const Text('Detail Game'), backgroundColor: Colors.brown[900]),
+      backgroundColor: Colors.brown,
       body: FutureBuilder(
         future: futureGame,
         builder: (context, AsyncSnapshot<Game> snapshot) {
@@ -67,7 +66,7 @@ class _DetailGameState extends State<DetailGame> {
                   ),
                 ),
                 const Text(
-                  'Kelompok 21',
+                  'GAMES',
                   style: TextStyle(fontSize: 15, color: Colors.black),
                 ),
                 const SizedBox(
@@ -76,25 +75,25 @@ class _DetailGameState extends State<DetailGame> {
                   child: Divider(color: Colors.black),
                 ),
                 Card(
-                  color: Colors.blueGrey[400],
+                  color: Colors.brown[300],
                   margin: const EdgeInsets.symmetric(
                       vertical: 10.0, horizontal: 75.0),
                   child: ListTile(
-                    leading: Icon(
-                      Icons.badge,
-                      color: Colors.blueGrey[100],
+                    leading: const Icon(
+                      Icons.view_agenda,
+                      color: Colors.white70,
                     ),
                     title: Text(snapshot.data!.turnament),
                   ),
                 ),
                 Card(
-                    color: Colors.blueGrey[400],
+                    color: Colors.brown[300],
                     margin: const EdgeInsets.symmetric(
                         vertical: 10.0, horizontal: 75.0),
                     child: ListTile(
-                      leading: Icon(
-                        Icons.email,
-                        color: Colors.blueGrey[100],
+                      leading: const Icon(
+                        Icons.biotech,
+                        color: Colors.white70,
                       ),
                       title: Text(snapshot.data!.bio),
                     )),
@@ -122,3 +121,4 @@ Future<Game> fetchGame(id) async {
     throw Exception('Failed to load episodes');
   }
 }
+
