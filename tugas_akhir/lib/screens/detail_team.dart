@@ -27,9 +27,8 @@ class _DetailTeamState extends State<DetailTeam> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Text('Detail Team'),
-          backgroundColor: Colors.lightBlue[900]),
-      backgroundColor: Colors.grey[400],
+          title: const Text('Detail Team'), backgroundColor: Colors.brown[900]),
+      backgroundColor: Colors.brown,
       body: FutureBuilder(
         future: futureTeam,
         builder: (context, AsyncSnapshot<Team> snapshot) {
@@ -73,14 +72,14 @@ class _DetailTeamState extends State<DetailTeam> {
                   child: Divider(color: Colors.black),
                 ),
                 Card(
-                  color: Colors.blueGrey[400],
+                  color: Colors.brown[300],
                   margin: const EdgeInsets.symmetric(
                       vertical: 10.0, horizontal: 75.0),
                   child: ListTile(
                     leading: const Text(
                       "DIVISI: ",
                       style: TextStyle(
-                        color: Colors.black,
+                        color: Colors.white70,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -88,14 +87,14 @@ class _DetailTeamState extends State<DetailTeam> {
                   ),
                 ),
                 Card(
-                    color: Colors.blueGrey[400],
+                    color: Colors.brown[300],
                     margin: const EdgeInsets.symmetric(
                         vertical: 10.0, horizontal: 75.0),
                     child: ListTile(
                       leading: const Text(
                         "ABOUT US: ",
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white70,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -126,3 +125,4 @@ Future<Team> fetchTeam(id) async {
     throw Exception('Failed to load episodes');
   }
 }
+
